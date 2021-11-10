@@ -1,21 +1,17 @@
 package com.thesis.learnengback.database.entity;
-
 import lombok.*;
 
 import javax.persistence.*;
 
-@Entity
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Entity
 @Getter
 @Setter
-public class Flashcards {
+public class FlashcardType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer cardId;
-    @ManyToOne
-    private FlashcardType flashcardType;
-    private String front;
-    private String back;
+    private Integer typeID;
+    private String name;
 }
