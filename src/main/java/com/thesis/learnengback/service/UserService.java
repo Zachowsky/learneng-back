@@ -33,6 +33,17 @@ public class UserService {
         }).orElseThrow(NoSuchElementException::new);
     }
 
+    public User loginGoogleUser(User user) {
+
+        Optional<User> userOptional = findByEmail(user.getEmail());
+
+        if (userOptional.isEmpty()) {
+            User save = userRepository.save(user);
+            return save;
+        }
+        return userOptional.get();
+    }
+
     public boolean register(UserDTO userDTO){
         Optional<User> searchUserByEmail = findByEmail(userDTO.getEmail());
 
@@ -40,7 +51,7 @@ public class UserService {
             return false;
         }
         User convertedUser = UserConv.convToEntity(userDTO);
-        User save = userRepository.save(convertedUser);
+        userRepository.save(convertedUser);
         return true;
 
     }
