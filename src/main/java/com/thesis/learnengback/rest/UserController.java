@@ -9,7 +9,6 @@ import com.thesis.learnengback.service.UserService;
 import com.thesis.learnengback.transport.converter.UserConv;
 import com.thesis.learnengback.transport.dto.UserDTO;
 import lombok.RequiredArgsConstructor;
-import org.apache.catalina.realm.UserDatabaseRealm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;

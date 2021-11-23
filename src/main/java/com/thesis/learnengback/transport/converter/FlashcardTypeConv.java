@@ -10,5 +10,7 @@ public class FlashcardTypeConv {
        return FlashcardTypeDTO.builder().name(name.getName()).build();
    }
 
-
+    public static FlashcardType toEntity(FlashcardTypeDTO name){
+       return FlashcardType.builder().name(name.getName()).build();
+   }
 }

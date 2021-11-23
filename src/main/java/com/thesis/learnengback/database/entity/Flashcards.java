@@ -10,6 +10,7 @@ import javax.persistence.*;
 @Data
 @Getter
 @Setter
+@Builder
 public class Flashcards {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
