@@ -1,6 +1,5 @@
 package com.thesis.learnengback.database.entity;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,11 +15,14 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Tenses {
+public class Translation {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer tenseId;
-    private String tense;
+    private Integer translId;
     private String sentence;
     private String answer;
+    private String tense;
+
 }
+
