@@ -1,7 +1,5 @@
 package com.thesis.learnengback.database.entity;
 
-
-import com.thesis.learnengback.database.enumeration.GradationType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -24,6 +22,5 @@ public class Gradation {
     private String normal;
     private String comparative;
     private String superlative;
-    private GradationType type;
 
 }

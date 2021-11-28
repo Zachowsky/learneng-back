@@ -2,6 +2,7 @@ package com.thesis.learnengback.rest;
 
 import com.thesis.learnengback.database.repository.TranslationRepository;
 import com.thesis.learnengback.transport.converter.TranslationConv;
+import com.thesis.learnengback.transport.dto.GradationDTO;
 import com.thesis.learnengback.transport.dto.TranslationDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,6 +30,7 @@ public class TranslationController {
     public ResponseEntity<List<TranslationDTO>> getAllTranslations(@PathVariable String tense){
 
         List<TranslationDTO> translationDTOS = translationRepository.findAllByTense(tense).stream().map(TranslationConv::toDTO).collect(Collectors.toList());
+        Collections.shuffle(translationDTOS);
 
         return ResponseEntity.ok(translationDTOS);
     }
