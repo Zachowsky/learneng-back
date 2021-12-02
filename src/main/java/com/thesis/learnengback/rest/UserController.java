@@ -57,6 +57,13 @@ public class UserController {
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
 
+    @PostMapping(value ="/dashboard/password")
+    public ResponseEntity<?> changePassword(@RequestBody UserDTO userDTO){
+
+        userService.changePassword(userDTO);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
     @GetMapping(value = "/google/{idToken}")
     public ResponseEntity<UserDTO> loginGoogleUser(HttpServletRequest request, @PathVariable String idToken) throws GeneralSecurityException, IOException {
         GoogleIdTokenVerifier verifier = new GoogleIdTokenVerifier.Builder(new NetHttpTransport(), new GsonFactory())

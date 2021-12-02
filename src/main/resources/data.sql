@@ -95,57 +95,57 @@ INSERT INTO gradation (comparative, normal, superlative) VALUES ('more', 'much',
 INSERT INTO gradation (comparative, normal, superlative) VALUES ('less', 'little', 'the least');
 
 
-INSERT INTO nouns (noun) VALUES ('bread');
-INSERT INTO nouns (noun) VALUES ('cash');
-INSERT INTO nouns (noun) VALUES ('dirt');
-INSERT INTO nouns (noun) VALUES ('energy');
-INSERT INTO nouns (noun) VALUES ('fire');
-INSERT INTO nouns (noun) VALUES ('food');
-INSERT INTO nouns (noun) VALUES ('grass');
-INSERT INTO nouns (noun) VALUES ('ice');
-INSERT INTO nouns (noun) VALUES ('money');
-INSERT INTO nouns (noun) VALUES ('music');
-INSERT INTO nouns (noun) VALUES ('hair');
-INSERT INTO nouns (noun) VALUES ('knowledge');
-INSERT INTO nouns (noun) VALUES ('luggage');
-INSERT INTO nouns (noun) VALUES ('love');
-INSERT INTO nouns (noun) VALUES ('milk');
-INSERT INTO nouns (noun) VALUES ('soap');
-INSERT INTO nouns (noun) VALUES ('sugar');
-INSERT INTO nouns (noun) VALUES ('water');
-INSERT INTO nouns (noun) VALUES ('wine');
-INSERT INTO nouns (noun) VALUES ('weather');
+INSERT INTO nouns (noun, is_countable) VALUES ('bread', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('cash', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('dirt', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('energy', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('fire', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('food', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('grass', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('ice', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('money', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('music', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('hair', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('knowledge', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('luggage', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('love', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('milk', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('soap', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('sugar', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('water', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('wine', 0);
+INSERT INTO nouns (noun, is_countable) VALUES ('weather', 0);
 
-INSERT INTO nouns (noun) VALUES ('child');
-INSERT INTO nouns (noun) VALUES ('man');
-INSERT INTO nouns (noun) VALUES ('woman');
-INSERT INTO nouns (noun) VALUES ('person');
-INSERT INTO nouns (noun) VALUES ('tooth');
-INSERT INTO nouns (noun) VALUES ('mouse');
-INSERT INTO nouns (noun) VALUES ('foot');
-INSERT INTO nouns (noun) VALUES ('sheep');
-INSERT INTO nouns (noun) VALUES ('fish');
+INSERT INTO nouns (noun, is_countable) VALUES ('child', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('man', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('woman', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('person', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('tooth', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('mouse', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('foot', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('sheep', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('fish', 1);
 
-INSERT INTO nouns (noun) VALUES ('car');
-INSERT INTO nouns (noun) VALUES ('bus');
-INSERT INTO nouns (noun) VALUES ('dress');
-INSERT INTO nouns (noun) VALUES ('tomato');
-INSERT INTO nouns (noun) VALUES ('potato');
-INSERT INTO nouns (noun) VALUES ('baby');
-INSERT INTO nouns (noun) VALUES ('wolf');
-INSERT INTO nouns (noun) VALUES ('elephant');
-INSERT INTO nouns (noun) VALUES ('bottle');
-INSERT INTO nouns (noun) VALUES ('monitor');
-INSERT INTO nouns (noun) VALUES ('keyboard');
-INSERT INTO nouns (noun) VALUES ('speaker');
-INSERT INTO nouns (noun) VALUES ('book');
-INSERT INTO nouns (noun) VALUES ('house');
-INSERT INTO nouns (noun) VALUES ('shelf');
-INSERT INTO nouns (noun) VALUES ('carpet');
-INSERT INTO nouns (noun) VALUES ('cable');
-INSERT INTO nouns (noun) VALUES ('device');
-INSERT INTO nouns (noun) VALUES ('dog');
-INSERT INTO nouns (noun) VALUES ('cat');
+INSERT INTO nouns (noun, is_countable) VALUES ('car', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('bus', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('dress', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('tomato', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('potato', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('baby', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('wolf', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('elephant', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('bottle', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('monitor', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('keyboard', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('speaker', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('book', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('house', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('shelf', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('carpet', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('cable', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('device', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('dog', 1);
+INSERT INTO nouns (noun, is_countable) VALUES ('cat', 1);
 
 
 INSERT INTO tenses (answer, sentence, tense) VALUES ('open', 'The shops usually..........early. (open)', 'present_simple');
@@ -176,15 +176,15 @@ INSERT INTO tenses (answer, sentence, tense) VALUES ('were fishing', 'The boys..
 
 
 
-INSERT INTO translation(answer, sentence, tense) VALUES('Łucja jest moją najlepszą przyjaciółką','Łucja is my best friend.','present_simple');
+INSERT INTO translation(answer, sentence, tense) VALUES('Łucja jest moją najlepszą przyjaciółką','Łucja is my best friend','present_simple');
 INSERT INTO translation(answer, sentence, tense) VALUES('Tomek pochodzi z Kanady','Tomek comes from Canada','present_simple');
 INSERT INTO translation(answer, sentence, tense) VALUES('Ona jest zawsze uprzejma','She is always polite','present_simple');
 INSERT INTO translation(answer, sentence, tense) VALUES('Ona jest wysoka i szczupła','She is tall and slim','present_simple');
 
 INSERT INTO translation(answer, sentence, tense) VALUES('Paweł doesn’t go to school at the weekends','Paweł nie chodzi do szkoły w weekendy','present_simple');
-INSERT INTO translation(answer, sentence, tense) VALUES('Anna tidies her room once a week','Anna sprząta swój pokój raz w tygodniu.','present_simple');
+INSERT INTO translation(answer, sentence, tense) VALUES('Anna tidies her room once a week','Anna sprząta swój pokój raz w tygodniu','present_simple');
 INSERT INTO translation(answer, sentence, tense) VALUES('How often do you have a guitar lesson?','Jak często masz lekcję gry na gitarze?','present_simple');
-INSERT INTO translation(answer, sentence, tense) VALUES('I like watching films.','Lubię oglądać filmy','present_simple');
+INSERT INTO translation(answer, sentence, tense) VALUES('I like watching films','Lubię oglądać filmy','present_simple');
 
 
 

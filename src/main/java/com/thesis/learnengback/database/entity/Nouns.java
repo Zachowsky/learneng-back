@@ -21,6 +21,6 @@ public class Nouns {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer nounId;
     private String noun;
-
+    private boolean isCountable;
 }
 

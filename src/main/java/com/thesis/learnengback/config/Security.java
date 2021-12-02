@@ -12,7 +12,7 @@ public class Security extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable().authorizeRequests()
-                .antMatchers("/register", "/login", "/google/**", "/dashboard/**", "/personal-pronouns-ex/**", "/start-ex/**", "/gradation/**").permitAll()
+                .antMatchers("/register", "/login", "/google/**", "/dashboard/**", "/personal-pronouns-ex/**", "/start-ex/**", "/gradation/**", "/nouns/**").permitAll()
                 .anyRequest().authenticated();
     }
 }

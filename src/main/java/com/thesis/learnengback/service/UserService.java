@@ -33,6 +33,16 @@ public class UserService {
         }).orElseThrow(()-> new CustomException("WRONG EMAIL"));
     }
 
+    public void changePassword(UserDTO userDto){
+        Optional<User> userOptional = findByEmail(userDto.getEmail());
+
+        if(userOptional.isPresent()){
+            User user = userOptional.get();
+            user.setPassword(userDto.getPassword());
+            userRepository.save(user);
+        }
+    }
+
     public User loginGoogleUser(User user) {
 
         Optional<User> userOptional = findByEmail(user.getEmail());
