@@ -1,6 +1,5 @@
 package com.thesis.learnengback.transport.dto;
 
-import com.thesis.learnengback.database.entity.FlashcardType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

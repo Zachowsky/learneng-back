@@ -15,6 +15,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -44,6 +45,8 @@ public class FlashcardController {
 
         FlashcardType byFlashcardType = flashcardTypeRepository.findByName(type);
         List<FlashcardsDTO> flashcardsDTOList = flashcardsRepository.findAllByFlashcardType(byFlashcardType).stream().map(FlashcardConv::toDTO).collect(Collectors.toList());
+
+        Collections.shuffle(flashcardsDTOList);
 
         return ResponseEntity.ok(flashcardsDTOList);
     }
