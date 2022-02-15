@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -13,5 +15,5 @@ import lombok.NoArgsConstructor;
 
 public class AddFlashcardsDTO {
     private FlashcardTypeDTO type;
-    private FlashcardsDTO[] flashcard;
+    private List<FlashcardsDTO> flashcard;
 }

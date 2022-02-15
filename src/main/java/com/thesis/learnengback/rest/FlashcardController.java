@@ -53,11 +53,8 @@ public class FlashcardController {
 
     @PostMapping("/add")
     public ResponseEntity<?> addNewFlashcard(@RequestBody AddFlashcardsDTO flashcard){
-        boolean add = flashcardsService.add(flashcard.getFlashcard(), flashcard.getType());
-        if(add){
-            return new ResponseEntity<>(HttpStatus.OK);
-        }
-        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        flashcardsService.add(flashcard.getFlashcard(), flashcard.getType());
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
 }

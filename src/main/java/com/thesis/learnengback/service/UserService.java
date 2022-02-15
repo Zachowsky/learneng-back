@@ -54,7 +54,7 @@ public class UserService {
         return userOptional.get();
     }
 
-    public boolean register(UserDTO userDTO){
+    public void register(UserDTO userDTO){
         Optional<User> searchUserByEmail = findByEmail(userDTO.getEmail());
 
         if(searchUserByEmail.isPresent()){
@@ -62,7 +62,6 @@ public class UserService {
         }
         User convertedUser = UserConv.convToEntity(userDTO);
         userRepository.save(convertedUser);
-        return true;
 
     }
 }

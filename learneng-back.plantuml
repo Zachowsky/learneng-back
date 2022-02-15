@@ -1,0 +1,479 @@
+@startuml
+
+title __LEARNENG-BACK's Class Diagram__\n
+
+
+    class MavenWrapperDownloader {
+    }
+
+
+    namespace om.thesis.learnengback {
+      class com.thesis.learnengback.LearnengBackApplication {
+      }
+    }
+  
+  
+    namespace om.thesis.learnengback {
+      namespace config {
+        class com.thesis.learnengback.config.CustomException {
+        }
+      }
+    }
+  
+  
+
+    namespace om.thesis.learnengback {
+      namespace config {
+        class com.thesis.learnengback.config.GoogleIdTokenVerifier {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace config {
+        class com.thesis.learnengback.config.Pipeline {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace config {
+        class com.thesis.learnengback.config.Security {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.entity {
+        class com.thesis.learnengback.database.entity.FlashcardType {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.entity {
+        class com.thesis.learnengback.database.entity.Flashcards {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.entity {
+        class com.thesis.learnengback.database.entity.Gradation {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.entity {
+        class com.thesis.learnengback.database.entity.Nouns {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.entity {
+        class com.thesis.learnengback.database.entity.Tenses {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.entity {
+        class com.thesis.learnengback.database.entity.Translation {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.entity {
+        class com.thesis.learnengback.database.entity.User {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.repository {
+        interface com.thesis.learnengback.database.repository.FlashcardTypeRepository {
+        }
+      }
+    }
+
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.repository {
+        interface com.thesis.learnengback.database.repository.FlashcardsRepository {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.repository {
+        interface com.thesis.learnengback.database.repository.GradationRepository {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.repository {
+        interface com.thesis.learnengback.database.repository.NounsRepository {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.repository {
+        interface com.thesis.learnengback.database.repository.TensesRepository {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.repository {
+        interface com.thesis.learnengback.database.repository.TranslationRepository {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace database.repository {
+        interface com.thesis.learnengback.database.repository.UserRepository {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace rest {
+        class com.thesis.learnengback.rest.FlashcardController {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace rest {
+        class com.thesis.learnengback.rest.GradationController {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace rest {
+        class com.thesis.learnengback.rest.NounsController {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace rest {
+        class com.thesis.learnengback.rest.PersonalPronounsController {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace rest {
+        class com.thesis.learnengback.rest.StartController {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace rest {
+        class com.thesis.learnengback.rest.TensesController {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace rest {
+        class com.thesis.learnengback.rest.TranslationController {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace rest {
+        class com.thesis.learnengback.rest.UserController {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace service {
+        class com.thesis.learnengback.service.FlashcardsService {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace service {
+        class com.thesis.learnengback.service.NLPService {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace service {
+        class com.thesis.learnengback.service.UserService {
+        }
+      }
+    }
+
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.converter {
+        class com.thesis.learnengback.transport.converter.FlashcardConv {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.converter {
+        class com.thesis.learnengback.transport.converter.FlashcardTypeConv {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.converter {
+        class com.thesis.learnengback.transport.converter.GradationConv {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.converter {
+        class com.thesis.learnengback.transport.converter.NounsConv {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.converter {
+        class com.thesis.learnengback.transport.converter.TensesConv {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.converter {
+        class com.thesis.learnengback.transport.converter.TranslationConv {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.converter {
+        class com.thesis.learnengback.transport.converter.UserConv {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.dto {
+        class com.thesis.learnengback.transport.dto.AddFlashcardsDTO {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.dto {
+        class com.thesis.learnengback.transport.dto.FlashcardTypeDTO {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.dto {
+        class com.thesis.learnengback.transport.dto.FlashcardsDTO {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.dto {
+        class com.thesis.learnengback.transport.dto.GradationDTO {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.dto {
+        class com.thesis.learnengback.transport.dto.NounsDTO {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.dto {
+        class com.thesis.learnengback.transport.dto.TensesDTO {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.dto {
+        class com.thesis.learnengback.transport.dto.TranslationDTO {
+        }
+      }
+    }
+
+  
+
+  
+    namespace om.thesis.learnengback {
+      namespace transport.dto {
+        class com.thesis.learnengback.transport.dto.UserDTO {
+        }
+      }
+    }
+
+  
+
+  com.thesis.learnengback.config.GoogleIdTokenVerifier -up-|> com.google.api.client.auth.openidconnect.IdTokenVerifier
+  com.thesis.learnengback.config.Security -up-|> org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter
+  com.thesis.learnengback.database.entity.Flashcards o-- com.thesis.learnengback.database.entity.FlashcardType : flashcardType
+  com.thesis.learnengback.rest.FlashcardController o-- com.thesis.learnengback.database.repository.FlashcardTypeRepository : flashcardTypeRepository
+  com.thesis.learnengback.rest.FlashcardController o-- com.thesis.learnengback.database.repository.FlashcardsRepository : flashcardsRepository
+  com.thesis.learnengback.rest.FlashcardController o-- com.thesis.learnengback.service.FlashcardsService : flashcardsService
+  com.thesis.learnengback.rest.GradationController o-- com.thesis.learnengback.database.repository.GradationRepository : gradationRepository
+  com.thesis.learnengback.rest.GradationController o-- com.thesis.learnengback.service.NLPService : nlpService
+  com.thesis.learnengback.rest.NounsController o-- com.thesis.learnengback.database.repository.NounsRepository : nounsRepository
+  com.thesis.learnengback.rest.PersonalPronounsController o-- com.thesis.learnengback.service.NLPService : nlpService
+  com.thesis.learnengback.rest.StartController o-- com.thesis.learnengback.service.NLPService : nlpService
+  com.thesis.learnengback.rest.TensesController o-- com.thesis.learnengback.database.repository.TensesRepository : tensesRepository
+  com.thesis.learnengback.rest.TranslationController o-- com.thesis.learnengback.database.repository.TranslationRepository : translationRepository
+  com.thesis.learnengback.rest.UserController o-- com.thesis.learnengback.service.UserService : userService
+  com.thesis.learnengback.service.FlashcardsService o-- com.thesis.learnengback.database.repository.FlashcardTypeRepository : flashcardTypeRepository
+  com.thesis.learnengback.service.FlashcardsService o-- com.thesis.learnengback.database.repository.FlashcardsRepository : flashcardsRepository
+  com.thesis.learnengback.service.UserService o-- com.thesis.learnengback.database.repository.UserRepository : userRepository
+  com.thesis.learnengback.transport.dto.AddFlashcardsDTO o-- com.thesis.learnengback.transport.dto.FlashcardTypeDTO : type
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

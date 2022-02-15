@@ -50,11 +50,9 @@ public class UserController {
 
     @PostMapping(value = "/register")
     public ResponseEntity<UserDTO> registerUser(@RequestBody UserDTO userDTO){
-        boolean user = userService.register(userDTO);
-        if(user){
-            return new ResponseEntity<>(HttpStatus.OK);
-        }
-        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+
+        userService.register(userDTO);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @PostMapping(value ="/dashboard/password")

@@ -27,7 +27,7 @@ public class FlashcardsService {
         this.flashcardTypeRepository = flashcardTypeRepository;
     }
 
-    public boolean add(FlashcardsDTO[] flashcardsDTO, FlashcardTypeDTO type){
+    public void add(List<FlashcardsDTO> flashcardsDTO, FlashcardTypeDTO type){
 
         List<Flashcards> conv = new ArrayList<>();
 
@@ -37,9 +37,7 @@ public class FlashcardsService {
         for (FlashcardsDTO dto : flashcardsDTO) {
             conv.add(FlashcardConv.toEntity2(dto, type1));
         }
-
         flashcardsRepository.saveAll(conv);
-
-        return true;
     }
 }
+
